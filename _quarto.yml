@@ -1,0 +1,37 @@
+project:
+  type: website
+
+website:
+  title: "ExESS"
+  search: true
+  navbar:
+    background: primary
+    left:
+      - href: index.qmd
+        text: "Home"
+      - href: about.qmd
+        text: "Documentation"
+  
+  sidebar:
+    - title: "Home"
+      style: docked
+      background: light
+      contents:
+        - text: "Home"
+          href: index.qmd
+
+    - title: "Documentation"
+      style: docked
+      background: light
+      contents:
+        - about.qmd
+
+format:
+  html:
+    theme: flatly
+    # theme: sandstone
+    css: styles.css
+    toc: true
+
+
+
